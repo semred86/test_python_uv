@@ -36,6 +36,6 @@ jobs:
           script: |
             cd /opt/test_python_uv
             git pull origin master
-            uv sync
+            /home/sam/.local/bin/uv sync
             # перезапуск если нужно, например:
             # systemctl restart myapp
