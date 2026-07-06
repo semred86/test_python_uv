@@ -33,8 +33,9 @@ jobs:
           host: ${{ secrets.VDS_HOST }}
           username: ${{ secrets.VDS_USER }}
           key: ${{ secrets.VDS_SSH_KEY }}
+          fingerprint: ${{ secrets.VDS_FINGERPRINT }}
           script: |
-            cd /opt/test_python_uv
+            cd ./src
             git pull origin master
             uv sync
             # перезапуск если нужно, например:

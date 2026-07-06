@@ -1,7 +1,3 @@
-def main():
-    print("Hello from test!")
-    print(2)
-
-
-if __name__ == "__main__":
-    main()
+# main.py
+def add(a, b):
+    return a + b
