@@ -37,6 +37,6 @@ jobs:
           script: |
             cd ./src
             git pull origin master
-            uv sync
+            /home/deploy/.local/bin/uv sync
             # перезапуск если нужно, например:
             # systemctl restart myapp
