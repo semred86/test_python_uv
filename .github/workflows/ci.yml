@@ -35,7 +35,7 @@ jobs:
           host: ${{ secrets.VDS_HOST }}
           username: ${{ secrets.VDS_USER }}
           key: ${{ secrets.VDS_SSH_KEY }}
-          #fingerprint: ${{ secrets.VDS_FINGERPRINT }} # Должно быть строго: SHA256:...
+          fingerprint: ${{ secrets.VDS_FINGERPRINT }} # Должно быть строго: SHA256:...
           script: |
             whoami
             ls -al
