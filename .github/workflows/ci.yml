@@ -33,7 +33,7 @@ jobs:
           host: ${{ secrets.VDS_HOST }}
           username: ${{ secrets.VDS_USER }}
           key: ${{ secrets.VDS_SSH_KEY }}
-          fingerprint: ${{ secrets.VDS_FINGERPRINT }}
+          # fingerprint: ${{ secrets.VDS_FINGERPRINT }}
           script: |
             cd ./src
             git pull origin master
